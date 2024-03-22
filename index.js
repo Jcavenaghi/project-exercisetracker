@@ -26,19 +26,6 @@ const userSchema = new mongoose.Schema({
 
 let User = mongoose.model('User', userSchema)
 
-// const createAndSavePerson = (done) => {
-//   let p1 = new Person({
-//     "name": "Joaquin", 
-//     "age": 22, 
-//     "FavoriteFoods": ["Milanesa", "Asado"]})
-
-//   p1.save(function(err, data) {
-//     if (err) return console.error(err);
-//     done(null, data)
-//   });
-// };
-
-
 // Middleware para analizar el cuerpo de la solicitud en formato de formulario
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors())
