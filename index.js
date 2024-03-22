@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema({
 
 let User = mongoose.model('User', userSchema)
 
+
 // Middleware para analizar el cuerpo de la solicitud en formato de formulario
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors())
